@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!--Кодировка страницы-->
+	<meta charset="UTF-8">
+	<!--Адаптивность сайта-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Заголовок страницы-->
+	<title>Обо мне - Моя первая веб-страница</title>
+	<!--Список ключевых слов на странице сайта-->
+	<meta name="keywords" content="Мой первый сайт, личный сайт-визитка, Анатолий Кострыкин, обо мне">
+	<!--Краткое описание страницы сайта-->
+	<meta name="description" content="Личный сайт начинающего веб-разработчика Анатолия Кострыкина. 
+									 Информация обо мне, мои умения и навыки.">
+	<!--Информация об авторе и авторских правах-->
+	<meta name="author" content="Анатолий Кострыкин">
+	<meta name="copyright" content="Анатолий Кострыкин">
+	<!--Подключаем таблицу стилей CSS-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--Добавляем favicon (значок нашей веб-страницы)-->
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<!--Подключаем Google шрифт-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+</head>
+
+<!--изменили шрифт для всей страницы и фоновое изображение-->
+
+<body style="font-family:'Montserrat', sans-serif;  background:url(../images/background.png) 0 0 repeat;">
+	<header>
+		<nav>
+			<!--сбросили стили браузера по умолчанию, немного выровняли элементы навигации-->
+			<ul style="list-style: none; padding: 0; display: flex; column-gap: 30px; align-items: center;">
+				<li><img src="../images/header_logo.png" alt="logo"></li>
+				<li><a href="../index.html">Главная</a></li>
+				<li><a href="#">Обо мне</a></li>
+				<li><a href="./contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+		<hr style="color: rgb(232, 232, 232);">
+	</header>
+
+	<main>
+		<h1>Обо мне</h1>
+		<section>
+			<h2>Основная информация</h2>
+			<ul type="circle">
+				<li><strong>Имя</strong>: Анатолий</li>
+				<li><strong>Возраст</strong>: 31</li>
+				<li><strong>Город</strong>: Пятигорск</li>
+				<li><strong>Email</strong>:
+					<a href="123456789@mail.ru" target="_blank" title="отправить email">123456789@mail.ru</a>
+				</li>
+				<li><strong>Телефон</strong>:
+					<a href="tel:+79191234567" title="позвонить">+79191234567</a>
+				</li>
+				<li><strong>Сайт</strong>:
+					<a href="https://github.com/Anatoly-web-dev" target="_blank" title="Профиль GitHub">перейти</a>
+				</li>
+			</ul>
+			<h3>Мои увлечения</h3>
+			<ul type="square">
+				<li>Спорт</li>
+				<li>Путешествия</li>
+				<li>Хайкинг</li>
+				<li>Изучение английского языка</li>
+				<li>Чтение художественной литературы</li>
+				<li>И многое другое...</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Мои навыки</h2>
+			<!--Добавил псевдоэлемент используя css для элементов маркированного списка, сбросил стили по умолчанию-->
+			<ul class="check-list" style="list-style: none;">
+				<li>Опыт работы с IDE Visual Studio Code</li>
+				<li>Знание основ работы в командной строке</li>
+				<li>Знание как использовать чужой код</li>
+				<li>Знание стандартов написания технических заданий</li>
+				<li>Знание культуры кода</li>
+				<li>Знание основных понятий программирования</li>
+				<li>Опыт работы с языком разметки Markdown</li>
+				<li>Опыт работы с системой контроля версий Git</li>
+			</ul>
+			<h3>Общий прогресс обучения</h3>
+			<ul style="list-style: none;">
+				<li>
+					<label for="Markdown">Markdown</label><br>
+					<progress id="Markdown" value="100" max="100"></progress> 100%
+				</li>
+				<li>
+					<label for="Git">Git</label><br>
+					<progress id="Git" value="50" max="100">Git</progress> 50%
+				</li>
+				<li>
+					<label for="Code">Использование чужого кода</label><br>
+					<progress id="Code" value="3" max="100"></progress> 3%
+				</li>
+				<li>
+					<label for="ide">Работа с ide</label><br>
+					<progress id="ide" value="3" max="100">3%</progress> 3%
+				</li>
+				<li>
+					<label for="tz">Работа с ТЗ</label><br>
+					<progress value="5" max="100"></progress> 5%
+				</li>
+				<li>
+					<label for="web">Веб-разработка</label><br>
+					<progress id="web" value="3" max="100"></progress> 3%
+				</li>
+				<li>
+					<label for="culture">Культура кода</label><br>
+					<progress id="culture" value="3" max="100"></progress> 3%
+				</li>
+			</ul>
+		</section>
+		<!--Добавили навигацию по страницам в конце основного контента, добавили прозрачности выделенному тексту-->
+		<nav>
+			<a href="../index.html" title="назад"><img src="../images/arrow_left.png" alt="arrow_left"></a>
+			<span style="opacity:0.4;"> пред | | след </span>
+			<a href="./contacts.html" title="вперед"><img src="../images/arrow_right.png" alt="arrow_right"></a>
+		</nav>
+		<hr style="color: rgb(232, 232, 232);">
+	</main>
+
+	<footer>
+		<nav>
+			<h3>Социальные сети</h3>
+			<!--добавил немного стилей в список и сбросил некоторые стили по умолчанию для лучшего отображения-->
+			<ul style="list-style:none; display: flex; column-gap: 20px; padding: 0;">
+				<li>
+					<a href="#" title="Профиль GitHub"><img src="../images/github_icon.png" alt="github_logo"></a>
+				</li>
+				<li>
+					<a href="#" title="Профиль VK"><img src="../images/vk_logo_icon.png" alt="vk_logo"></a>
+				</li>
+				<li>
+					<a href="#" title="Мой WhatsApp"><img src="../images/whatsapp_logo_icon.png" alt="whatsapp_logo"></a>
+				</li>
+				<li>
+					<a href="#" title="Мой telegram"><img src="../images/telegram_logo_icon.png" alt="Telegram_logo"></a>
+				</li>
+			</ul>
+		</nav>
+		<address><strong>©</strong> 2022. Все права защищены,
+			<a href="https://github.com/Anatoly-web-dev" target="_blank" title="Профиль на GitHub">Анатолий Кострыкин</a>
+		</address>
+	</footer>
+
+	<!--Подключаем внешний файл со скриптами (пустой пока :) )-->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!--Кодировка страницы-->
+	<meta charset="UTF-8">
+	<!--Адаптивность сайта-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Заголовок страницы-->
+	<title>Контакты - Моя первая веб-страница</title>
+	<!--Список ключевых слов на странице сайта-->
+	<meta name="keywords" content="Мой первый сайт, личный сайт-визитка, Анатолий Кострыкин, контакты">
+	<!--Краткое описание страницы сайта-->
+	<meta name="description" content="Личный сайт начинающего веб-разработчика Анатолия Кострыкина. 
+									 Мои контакты. Заполните форму обратной связи. Свяжитесь со мной удобным вам способом.">
+	<!--Добавляем информацию об авторе и авторских правах-->
+	<meta name="author" content="Анатолий Кострыкин">
+	<meta name="copyright" content="Анатолий Кострыкин">
+	<!--Подключаем таблицу стилей CSS (пока пустую :) )-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--Добавляем favicon (значок нашей веб-страницы)-->
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<!--Подключаем Google шрифт-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+</head>
+
+<!--изменили шрифт для всей страницы и фоновое изображение-->
+
+<body style="font-family:'Montserrat', sans-serif;  background:url(../images/background.png) 0 0 repeat;">
+	<header>
+		<nav>
+			<!--сбросили стили браузера по умолчанию, немного выровняли элементы навигации-->
+			<ul style="list-style: none; padding: 0; display: flex; column-gap: 30px; align-items: center;">
+				<li><img src="../images/header_logo.png" alt="logo"></li>
+				<li><a href="../index.html">Главная</a></li>
+				<li><a href="./about.html">Обо мне</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<hr style="color: rgb(232, 232, 232);">
+	</header>
+
+	<main>
+		<h1>Контакты</h1>
+		<section>
+			<h2>Свяжитесь со мной</h2>
+			<address><strong>Адрес:</strong> г. Пятигорск, ул.Неизвестная, 77</address>
+			<p><strong>Отправить email</strong>:
+				<a href="123456789@mail.ru" target="_blank" title="отправить email"> 123456789@mail.ru</a>
+			</p>
+			<p><strong>Позвонить</strong>:<a href="tel:+79191234567" title="позвонить"> +79191234567</a></p>
+		</section>
+		<section>
+			<h2>Социальные сети</h2>
+			<p><a href="#" title="Профиль GitHub"><img src="../images/github_icon.png" alt="github_logo"> GitHub</a></p>
+			<p><a href="#" title="Профиль VK"><img src="../images/vk_logo_icon.png" alt="vk_logo"> ВКонтакте</a></p>
+			<p>
+				<a href="#" title="Мой WhatsApp">
+					<img src="../images/whatsapp_logo_icon.png" alt="whatsapp_logo"> WhatsApp
+				</a>
+			</p>
+			<p>
+				<a href="#" title="Мой telegram">
+					<img src="../images/telegram_logo_icon.png" alt="Telegram_logo"> Telegram
+				</a>
+			</p>
+		</section>
+		<section>
+			<h2>Обратная связь</h2>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Напишите мне</legend>
+					<p>
+						<label for="user_name">Ваше имя</label><br><br>
+						<input id="user_name" type="text" name="user_name" placeholder="ФИО полностью" required size="35">
+					</p>
+					<p>
+						<label for="user_email">Ваш email</label><br><br>
+						<input id="user_email" type="email" name="user_email" placeholder="Ваш email" required size="35">
+					</p>
+					<p>
+						<label for="user_message">Ваше сообщение</label><br><br>
+						<textarea id="user_message" type="text" name="user_message" cols="30" rows="10"
+							placeholder="Сообщение..." required>
+					</textarea>
+					</p>
+					<p><button type="submit">Отправить</button> <button type="reset">Сбросить</button></p>
+				</fieldset>
+			</form>
+		</section>
+		<!--Добавили навигацию по страницам в конце основного контента, добавили прозрачности выделенному тексту-->
+		<nav>
+			<a href="./about.html" title="назад"><img src="../images/arrow_left.png" alt="arrow_left"></a>
+			<span style="opacity:0.4;"> пред | | след </span>
+			<a href="#" title="вперед"><img src="../images/arrow_right.png" alt="arrow_right"></a>
+		</nav>
+		<hr style="color: rgb(232, 232, 232);">
+	</main>
+
+	<footer>
+		<nav>
+			<h3>Социальные сети</h3>
+			<!--добавил немного стилей в список и сбросил некоторые стили по умолчанию для лучшего отображения-->
+			<ul style="list-style:none; display: flex; column-gap: 20px; padding: 0;">
+				<li>
+					<a href="#" title="Профиль GitHub"><img src="../images/github_icon.png" alt="github_logo"></a>
+				</li>
+				<li>
+					<a href="#" title="Профиль VK"><img src="../images/vk_logo_icon.png" alt="vk_logo"></a>
+				</li>
+				<li>
+					<a href="#" title="Мой WhatsApp"><img src="../images/whatsapp_logo_icon.png" alt="whatsapp_logo"></a>
+				</li>
+				<li>
+					<a href="#" title="Мой telegram"><img src="../images/telegram_logo_icon.png" alt="Telegram_logo"></a>
+				</li>
+			</ul>
+		</nav>
+		<address><strong>©</strong> 2022. Все права защищены,
+			<a href="https://github.com/Anatoly-web-dev" target="_blank" title="Профиль на GitHub">Анатолий Кострыкин</a>
+		</address>
+	</footer>
+
+	<!--Подключаем внешний файл со скриптами (пустой пока :) )
+	<script src="js/script.js"></script>
+	-->
+</body>
+
+</html>

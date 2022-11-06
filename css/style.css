@@ -1,0 +1,55 @@
+/*Немного использовали возможности css:*/
+html {
+	height: 100%;
+}
+
+/*Ограничил ширину страницы в 1300px, выровнил контент на странице по центру*/
+/*Прижал футер к низу*/
+/*Добавил внутренний отступ слева и справа тегу body*/
+body {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-rows: minmax(100px, auto) 1fr minmax(100px, auto);
+	grid-template-columns: minmax(auto, 1200px);
+	justify-content: center;
+	padding: 0 15px;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/);
+}
+
+/*Добавил псевдоэлемент для элементов маркированного списка*/
+.check-list li {
+	position: relative;
+	margin: 0 0 15px 0px;
+}
+
+.check-list li::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: url(../images/checkmark_icon.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: -25px;
+	top: 50%;
+	margin: -10px 0 0 0;
+}
+
+/*Убрал подчеркивание у ссылок по умолчанию, добавили при наведении*/
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*Запретили пользователя изменять размер поля ввода */
+textarea {
+	resize: none;
+}
