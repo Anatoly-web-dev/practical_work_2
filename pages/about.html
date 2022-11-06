@@ -43,78 +43,80 @@
 	</header>
 
 	<main>
-		<h1>Обо мне</h1>
-		<section>
-			<h2>Основная информация</h2>
-			<ul>
-				<li><strong>Имя</strong>: Анатолий</li>
-				<li><strong>Возраст</strong>: 31</li>
-				<li><strong>Город</strong>: Пятигорск</li>
-				<li><strong>Email</strong>:
-					<a href="123456789@mail.ru" target="_blank" title="отправить email">123456789@mail.ru</a>
-				</li>
-				<li><strong>Телефон</strong>:
-					<a href="tel:+79191234567" title="позвонить">+79191234567</a>
-				</li>
-				<li><strong>Сайт</strong>:
-					<a href="https://github.com/Anatoly-web-dev" target="_blank" title="Профиль GitHub">перейти</a>
-				</li>
-			</ul>
-			<h3>Мои увлечения</h3>
-			<ul>
-				<li>Спорт</li>
-				<li>Путешествия</li>
-				<li>Хайкинг</li>
-				<li>Изучение английского языка</li>
-				<li>Чтение художественной литературы</li>
-				<li>И многое другое...</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Мои навыки</h2>
-			<!--Добавил псевдоэлемент используя css для элементов маркированного списка, сбросил стили по умолчанию-->
-			<ul class="check-list" style="list-style: none;">
-				<li>Опыт работы с IDE Visual Studio Code</li>
-				<li>Знание основ работы в командной строке</li>
-				<li>Знание как использовать чужой код</li>
-				<li>Знание стандартов написания технических заданий</li>
-				<li>Знание культуры кода</li>
-				<li>Знание основных понятий программирования</li>
-				<li>Опыт работы с языком разметки Markdown</li>
-				<li>Опыт работы с системой контроля версий Git</li>
-			</ul>
-			<h3>Общий прогресс обучения</h3>
-			<ul style="list-style: none;">
-				<li>
-					<label for="Markdown">Markdown</label><br>
-					<progress id="Markdown" value="100" max="100"></progress> 100%
-				</li>
-				<li>
-					<label for="Git">Git</label><br>
-					<progress id="Git" value="50" max="100">Git</progress> 50%
-				</li>
-				<li>
-					<label for="Code">Использование чужого кода</label><br>
-					<progress id="Code" value="3" max="100"></progress> 3%
-				</li>
-				<li>
-					<label for="ide">Работа с ide</label><br>
-					<progress id="ide" value="3" max="100">3%</progress> 3%
-				</li>
-				<li>
-					<label for="tz">Работа с ТЗ</label><br>
-					<progress id="tz" value="5" max="100"></progress> 5%
-				</li>
-				<li>
-					<label for="web">Веб-разработка</label><br>
-					<progress id="web" value="3" max="100"></progress> 3%
-				</li>
-				<li>
-					<label for="culture">Культура кода</label><br>
-					<progress id="culture" value="3" max="100"></progress> 3%
-				</li>
-			</ul>
-		</section>
+		<article>
+			<h1>Обо мне</h1>
+			<section>
+				<h2>Основная информация</h2>
+				<ul>
+					<li><strong>Имя</strong>: Анатолий</li>
+					<li><strong>Возраст</strong>: 31</li>
+					<li><strong>Город</strong>: Пятигорск</li>
+					<li><strong>Email</strong>:
+						<a href="123456789@mail.ru" target="_blank" title="отправить email">123456789@mail.ru</a>
+					</li>
+					<li><strong>Телефон</strong>:
+						<a href="tel:+79191234567" title="позвонить">+79191234567</a>
+					</li>
+					<li><strong>Сайт</strong>:
+						<a href="https://github.com/Anatoly-web-dev" target="_blank" title="Профиль GitHub">перейти</a>
+					</li>
+				</ul>
+				<h3>Мои увлечения</h3>
+				<ul>
+					<li>Спорт</li>
+					<li>Путешествия</li>
+					<li>Хайкинг</li>
+					<li>Изучение английского языка</li>
+					<li>Чтение художественной литературы</li>
+					<li>И многое другое...</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Мои навыки</h2>
+				<!--Добавил псевдоэлемент используя css для элементов маркированного списка, сбросил стили по умолчанию-->
+				<ul class="check-list" style="list-style: none;">
+					<li>Опыт работы с IDE Visual Studio Code</li>
+					<li>Знание основ работы в командной строке</li>
+					<li>Знание как использовать чужой код</li>
+					<li>Знание стандартов написания технических заданий</li>
+					<li>Знание культуры кода</li>
+					<li>Знание основных понятий программирования</li>
+					<li>Опыт работы с языком разметки Markdown</li>
+					<li>Опыт работы с системой контроля версий Git</li>
+				</ul>
+				<h3>Общий прогресс обучения</h3>
+				<ul style="list-style: none;">
+					<li>
+						<label for="Markdown">Markdown</label><br>
+						<progress id="Markdown" value="100" max="100"></progress> 100%
+					</li>
+					<li>
+						<label for="Git">Git</label><br>
+						<progress id="Git" value="50" max="100">Git</progress> 50%
+					</li>
+					<li>
+						<label for="Code">Использование чужого кода</label><br>
+						<progress id="Code" value="3" max="100"></progress> 3%
+					</li>
+					<li>
+						<label for="ide">Работа с ide</label><br>
+						<progress id="ide" value="3" max="100">3%</progress> 3%
+					</li>
+					<li>
+						<label for="tz">Работа с ТЗ</label><br>
+						<progress id="tz" value="5" max="100"></progress> 5%
+					</li>
+					<li>
+						<label for="web">Веб-разработка</label><br>
+						<progress id="web" value="3" max="100"></progress> 3%
+					</li>
+					<li>
+						<label for="culture">Культура кода</label><br>
+						<progress id="culture" value="3" max="100"></progress> 3%
+					</li>
+				</ul>
+			</section>
+		</article>
 		<!--Добавили навигацию по страницам в конце основного контента, добавили прозрачности выделенному тексту-->
 		<nav>
 			<a href="../index.html" title="назад"><img src="../images/arrow_left.png" alt="arrow_left"></a>
