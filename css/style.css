@@ -53,3 +53,7 @@ a:hover {
 textarea {
 	resize: none;
 }
+
+figcaption {
+	opacity: 0.1;
+}
